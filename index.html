@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sur Perímetral | Cercos y Limpieza de Terrenos</title>
+    
+    <!-- Tailwind CSS CDN Oficial -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            lightBg: '#F8FAFC',
+                            cardBg: '#FFFFFF',
+                            darkText: '#0F172A',
+                            slate: '#475569',
+                            gold: '#B8952B',
+                            goldLight: '#FEF9E7',
+                            forest: '#0F291E',
+                            forestLight: '#E6F4EA',
+                            whatsapp: '#25D366'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts & FontAwesome Icons CDN (Asegurado) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFC;
+        }
+    </style>
+</head>
+<body class="text-brand-darkText antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Navegación -->
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
+        <div class="mx-auto flex max-w-7xl items-center justify-between p-4 sm:px-6 lg:px-8">
+            <div class="flex items-center">
+                <img src="./SurPerimetralLogoPreciso_2.png" alt="Sur Perímetral" class="h-14 w-auto object-contain" onerror="this.src='https://via.placeholder.com/200x80?text=Sur+Perimetral'">
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-brand-slate">
+                <a href="#inicio" class="hover:text-brand-gold transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-brand-gold transition-colors">Nosotros</a>
+                <a href="#servicios" class="hover:text-brand-gold transition-colors">Servicios</a>
+                <a href="#galeria" class="hover:text-brand-gold transition-colors">Proyectos</a>
+                <a href="#ventajas" class="hover:text-brand-gold transition-colors">Ventajas</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">Preguntas</a>
+            </nav>
+            <div class="hidden sm:block">
+                <a href="tel:+56982477936" class="inline-flex items-center space-x-2 border border-brand-gold/30 bg-brand-goldLight px-4 py-2 text-xs font-bold text-brand-gold rounded-full hover:bg-brand-gold hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span>+56 9 8247 7936</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="inicio" class="relative overflow-hidden pt-20 pb-16 lg:pt-32 lg:pb-24 bg-gradient-to-b from-brand-forestLight/50 via-brand-lightBg to-brand-lightBg">
+        <div class="absolute top-0 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-brand-gold/5 blur-[120px]"></div>
+        <div class="absolute bottom-0 left-0 -z-10 h-[400px] w-[400px] rounded-full bg-brand-forestLight blur-[100px]"></div>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex flex-wrap justify-center gap-2 mb-6">
+                <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-semibold text-brand-forest shadow-sm">
+                    <span class="h-2 w-2 rounded-full bg-brand-gold animate-pulse"></span>
+                    17 Años Transformando Propiedades en el Sur
+                </span>
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-brand-goldLight px-3 py-1.5 text-xs font-bold text-brand-gold">
+                    <i class="fa-solid fa-gears text-[10px]"></i> Tecnología e Ingeniería Alemana
+                </span>
+            </div>
+            <h1 class="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight text-brand-darkText sm:text-5xl lg:text-6xl !leading-tight">
+                Preparamos, limpiamos y protegemos tu propiedad con un trabajo <span class="text-brand-gold">bien hecho a la primera.</span>
+            </h1>
+            <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-brand-slate">
+                En <strong>Sur Perímetral</strong> combinamos materiales duraderos, la experiencia que exige el clima del sur y un estándar de ejecución riguroso respaldado por <strong>maquinaria alemana de alta gama</strong>.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://wa.me/56982477936" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 rounded-xl bg-brand-gold px-8 py-4 font-bold text-white shadow-lg shadow-brand-gold/20 hover:bg-brand-gold/90 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Cotizar mi proyecto por WhatsApp</span>
+                </a>
+                <a href="tel:+56982477936" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 rounded-xl border border-slate-200 bg-white px-8 py-4 font-semibold text-brand-darkText shadow-sm hover:bg-slate-50 transition-all duration-200">
+                    <i class="fa-solid fa-phone text-sm text-brand-gold"></i>
+                    <span>Llamar ahora</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Sobre Nosotros -->
+    <section id="nosotros" class="py-16 lg:py-24 border-y border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Nuestra Historia e Identidad</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl">Disciplina, raíces locales y el respeto por la palabra.</h2>
+                    <div class="h-1 w-20 bg-brand-gold rounded"></div>
+                </div>
+                <div class="lg:col-span-7 space-y-6 text-brand-slate text-justify text-sm sm:text-base">
+                    <p>
+                        <strong>Sur Perímetral</strong> no nació detrás de un escritorio; nació directamente en el terreno, enfrentando las duras condiciones climáticas del sur de Chile. Con base en <strong>Nueva Braunau</strong>, nuestra empresa familiar une la experiencia de 17 años en el campo con una profunda herencia y <strong>raíces de disciplina alemana</strong>. Para nosotros, el orden, la puntualidad y la precisión no son complementos, son nuestra base operativa.
+                    </p>
+                    <p>
+                        Esa misma búsqueda de excelencia nos lleva a no improvisar jamás con las herramientas. Trabajamos exclusivamente con <strong>maquinaria de marca y tecnología alemana profesional</strong> (como nuestras desbrozadoras y motosierras de alta resistencia), garantizando un rendimiento técnico continuo y cortes limpios que aceleran los plazos en terreno sin sacrificar la perfección estructural.
+                    </p>
+                    <p>
+                        Entendemos que un cerco es el resguardo de tu hogar, tus animales y tu inversión. Por eso, honramos el valor de la palabra empeñada mediante un servicio transparente, coordinado y definitivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Nuestros Servicios -->
+    <section id="servicios" class="py-16 lg:py-24 relative">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16" style="margin-bottom: 4rem;">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-gold" style="color: #B8952B; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; tracking: 0.1em;">Qué Hacemos</span>
+                <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl" style="color: #0F172A; font-weight: 700; font-size: 2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">Servicios diseñados para la realidad del sur</h2>
+                <p class="mx-auto max-w-2xl text-brand-slate text-sm sm:text-base" style="color: #475569; font-size: 1rem;">Hacemos el trabajo pesado combinando técnicas locales y la máxima potencia tecnológica industrial.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="relative group rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-brand-gold/50 hover:shadow-2xl hover:-translate-y-1 shadow-sm" style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 1rem; padding: 2rem;">
+                    <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl text-brand-gold" style="background-color: #FEF9E7; color: #B8952B; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 0.75rem; margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-fence text-xl" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkText mb-4" style="color: #0F172A; font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Cercos Perimetrales Estructurales</h3>
+                    <p class="text-brand-slate text-sm leading-relaxed text-justify" style="color: #475569; font-size: 0.875rem; line-height: 1.625; text-align: justify;">
+                        Diseñamos e instalamos soluciones a la medida de tu propiedad. Ya sean parcelas residenciales, predios agrícolas o perímetros de empresas, utilizamos postes seleccionados y alambres de máxima calidad para asegurar la durabilidad estructural frente al clima húmedo. Cada poste queda perfectamente alineado y firme.
+                    </p>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="relative group rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-brand-gold/50 hover:shadow-2xl hover:-translate-y-1 shadow-sm" style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 1rem; padding: 2rem;">
+                    <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl text-brand-forest" style="background-color: #E6F4EA; color: #0F291E; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 0.75rem; margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-screwdriver-wrench text-xl" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkText mb-4" style="color: #0F172A; font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Limpieza con Maquinaria Alemana</h3>
+                    <p class="text-brand-slate text-sm leading-relaxed text-justify" style="color: #475569; font-size: 0.875rem; line-height: 1.625; text-align: justify;">
+                        Transformamos espacios cubiertos de maleza, matorrales espesos o monte cerrado en propiedades limpias y ordenadas. Equipados con <strong>motosierras y desbrozadoras alemanas profesionales</strong>, ejecutamos despejes integrales y trozados rápidos con un rendimiento ininterrumpido en cualquier tipo de madera o maleza.
+                    </p>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="relative group rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-brand-gold/50 hover:shadow-2xl hover:-translate-y-1 shadow-sm" style="background-color: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 1rem; padding: 2rem;">
+                    <div class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl text-brand-darkText" style="background-color: #F1F5F9; color: #0F172A; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border-radius: 0.75rem; margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-house-shield text-xl" style="font-size: 1.25rem;"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkText mb-4" style="color: #0F172A; font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem;">Servicio Integral "Llave en Mano"</h3>
+                    <p class="text-brand-slate text-sm leading-relaxed text-justify" style="color: #475569; font-size: 0.875rem; line-height: 1.625; text-align: justify;">
+                        Olvídate de la incomodidad de coordinar con múltiples contratistas independientes. Nosotros asumimos todo el proceso de principio a fin: desde entrar al monte virgen para limpiar y habilitar el espacio con nuestro equipamiento técnico, hasta dejar el perímetro cerrado y protegido con maderas tratadas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Galería de Proyectos Reales -->
+    <section id="galeria" class="py-16 lg:py-24 border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">El Trabajo en Terreno</span>
+                <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl">Nuestros equipos y resultados definitivos</h2>
+                <p class="mx-auto max-w-2xl text-brand-slate text-xs sm:text-sm">Imágenes de nuestros servicios reales ejecutados con herramientas e ingeniería de precisión profesional.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Imagen 1 -->
+                <div class="relative overflow-hidden rounded-2xl border border-slate-200 group h-80 bg-slate-100 shadow-sm">
+                    <img src="./D_NQ_NP_2X_878625-MLA84178237900_052025-F.webp" alt="Limpieza de malezas en terreno" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.nextElementSibling.style.display='flex'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkText/80 via-brand-darkText/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-gold bg-brand-goldLight px-2 py-0.5 rounded-full">Equipamiento Alemán</span>
+                            <p class="text-xs font-bold text-white mt-1.5">Desbrozado profesional de alta potencia para matorrales</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center hidden bg-slate-50">
+                        <i class="fa-solid fa-scissors text-2xl text-brand-gold mb-2"></i>
+                        <span class="text-xs text-brand-slate">Falta el archivo:<br><strong class="break-all text-brand-darkText">D_NQ_NP_2X_878625-MLA84178237900_052025-F.webp</strong></span>
+                    </div>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="relative overflow-hidden rounded-2xl border border-slate-200 group h-80 bg-slate-100 shadow-sm">
+                    <img src="./03-86.jpg" alt="Despeje forestal y trozado con motosierra profesional" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.nextElementSibling.style.display='flex'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkText/80 via-brand-darkText/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-gold bg-brand-goldLight px-2 py-0.5 rounded-full">Tecnología Alemana</span>
+                            <p class="text-xs font-bold text-white mt-1.5">Trozado rápido y seguro de árboles y estructuras caídas</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center hidden bg-slate-50">
+                        <i class="fa-solid fa-tree text-2xl text-brand-gold mb-2"></i>
+                        <span class="text-xs text-brand-slate">Falta el archivo:<br><strong class="text-brand-darkText">03-86.jpg</strong></span>
+                    </div>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="relative overflow-hidden rounded-2xl border border-slate-200 group h-80 bg-slate-100 shadow-sm">
+                    <img src="./eltractor.jpeg" alt="Maquinaria para acondicionamiento de parcelas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.nextElementSibling.style.display='flex'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkText/80 via-brand-darkText/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-gold bg-brand-goldLight px-2 py-0.5 rounded-full">Habilitación</span>
+                            <p class="text-xs font-bold text-white mt-1.5">Mantención técnica de parcelas en grandes áreas</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center hidden bg-slate-50">
+                        <i class="fa-solid fa-tractor text-2xl text-brand-gold mb-2"></i>
+                        <span class="text-xs text-brand-slate">Falta el archivo:<br><strong class="break-all text-brand-darkText">eltractor.jpeg</strong></span>
+                    </div>
+                </div>
+
+                <!-- Imagen 4 -->
+                <div class="relative overflow-hidden rounded-2xl border border-slate-200 group h-80 bg-slate-100 shadow-sm">
+                    <img src="./WhatsApp Image 2026-06-15 at 11.05.34 PM (3).jpeg" alt="Cercado perimetral con malla instalado" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darkText/80 via-brand-darkText/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-gold bg-brand-goldLight px-2 py-0.5 rounded-full">Resultados</span>
+                            <p class="text-xs font-bold text-white mt-1.5">Estructuras sólidas, rectas e impregnadas de alta resistencia</p>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center hidden bg-slate-50">
+                        <i class="fa-solid fa-fence text-2xl text-brand-gold mb-2"></i>
+                        <span class="text-xs text-brand-slate">Falta el archivo:<br><strong class="break-all text-brand-darkText">WhatsApp Image 2026-06-15 at 11.05.34 PM (3).jpeg</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ¿Por qué elegirnos? -->
+    <section id="ventajas" class="py-16 lg:py-24 border-t border-slate-200 bg-brand-lightBg">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-4 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Ventajas Reales</span>
+                    <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl">¿Por qué confiar en Sur Perímetral?</h2>
+                    <p class="text-brand-slate text-sm">Elevamos la plusvalía de tu propiedad mediante procesos ordenados, transparentes y profesionales.</p>
+                </div>
+                <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex gap-4 p-5 rounded-xl border border-slate-100 bg-white shadow-sm">
+                        <div class="text-brand-gold mt-1"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-brand-darkText text-base">Herramientas Profesionales Alemanas</h4>
+                            <p class="text-brand-slate text-xs mt-1">Garantizamos rapidez y cortes óptimos. No improvisamos ni perdemos tiempo valioso por fallas de equipo.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-5 rounded-xl border border-slate-100 bg-white shadow-sm">
+                        <div class="text-brand-gold mt-1"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-brand-darkText text-base">Servicio "Todo en Uno"</h4>
+                            <p class="text-brand-slate text-xs mt-1">Limpiamos el monte y estructuramos tu cierre definitivo de inmediato, evitando múltiples fletes o subcontratos.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-5 rounded-xl border border-slate-100 bg-white shadow-sm">
+                        <div class="text-brand-gold mt-1"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-brand-darkText text-base">Cercos Rectos y Nivelados</h4>
+                            <p class="text-brand-slate text-xs mt-1">Nuestra disciplina de diseño asegura alineaciones exactas y postes empotrados con máxima estabilidad.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-5 rounded-xl border border-slate-100 bg-white shadow-sm">
+                        <div class="text-brand-gold mt-1"><i class="fa-solid fa-circle-check"></i></div>
+                        <div>
+                            <h4 class="font-bold text-brand-darkText text-base">Arraigo Local y Confiabilidad</h4>
+                            <p class="text-brand-slate text-xs mt-1">Conocemos el clima extremo y los tipos de terreno de la región, entregando presupuestos honestos de antemano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimonios -->
+    <section id="testimonios" class="py-16 lg:py-24 border-t border-slate-200 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Opiniones</span>
+                <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl">Lo que dicen nuestros clientes</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl border border-slate-200 bg-brand-lightBg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex text-brand-gold gap-1 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-brand-darkText text-sm italic leading-relaxed text-justify">
+                            "Compré una parcela que era prácticamente puro monte en las afueras de Nueva Braunau. El equipo de Sur Perímetral hizo un trabajo impecable: limpiaron el bosque de manera muy ordenada y dejaron el cierre perimetral firme y derecho."
+                        </p>
+                    </div>
+                    <div class="mt-6 border-t border-slate-200 pt-4 text-xs">
+                        <p class="font-bold text-brand-darkText">Claudio M.</p>
+                        <p class="text-brand-slate">Parcelero Familiar - Puerto Varas</p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl border border-slate-200 bg-brand-lightBg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex text-brand-gold gap-1 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-brand-darkText text-sm italic leading-relaxed text-justify">
+                            "Lo que más destaco es el orden y la puntualidad. Tienen una disciplina de trabajo que ya no se encuentra fácil en el sur. Se nota que usan maquinaria de primer nivel y materiales excelentes. Cumplieron con todo lo acordado desde el primer día."
+                        </p>
+                    </div>
+                    <div class="mt-6 border-t border-slate-200 pt-4 text-xs">
+                        <p class="font-bold text-brand-darkText">Isabel R.</p>
+                        <p class="text-brand-slate">Propietaria Nueva - Sector Línea Nueva</p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl border border-slate-200 bg-brand-lightBg flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex text-brand-gold gap-1 text-xs mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-brand-darkText text-sm italic leading-relaxed text-justify">
+                            "Necesitábamos cambiar varios kilómetros de cerco antiguo y despejar matorral denso. Sur Perímetral demostró su experiencia de inmediato. Vinieron equipados con motosierras alemanas profesionales que avanzan volando en el bosque. Muy eficientes."
+                        </p>
+                    </div>
+                    <div class="mt-6 border-t border-slate-200 pt-4 text-xs">
+                        <p class="font-bold text-brand-darkText">Andrés V.</p>
+                        <p class="text-brand-slate">Empresario Agrícola - Frutillar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Preguntas Frecuentes -->
+    <section id="faq" class="py-16 lg:py-24 border-t border-slate-200 bg-brand-lightBg">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">FAQ</span>
+                <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                    <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                        <h3 class="font-bold text-brand-darkText text-base sm:text-lg">1. ¿En qué zonas realizan los trabajos?</h3>
+                        <span class="ml-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-brand-gold group-open:rotate-180 transition-transform duration-200">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-brand-slate text-sm leading-relaxed text-justify">
+                        Nuestra base de operaciones está en Nueva Braunau, y prestamos servicios en toda la zona y comunas aledañas de la región. Consúltanos por tu ubicación exacta para coordinar una visita técnica.
+                    </p>
+                </details>
+
+                <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                    <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                        <h3 class="font-bold text-brand-darkText text-base sm:text-lg">2. ¿Por qué es una ventaja que usen maquinaria alemana?</h3>
+                        <span class="ml-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-brand-gold group-open:rotate-180 transition-transform duration-200">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-brand-slate text-sm leading-relaxed text-justify">
+                        La maquinaria alemana profesional de alta gama ofrece una mayor velocidad de corte, resistencia en jornadas extendidas de trabajo pesado y cortes limpios en todo tipo de maderas nativas o arbustos. Esto evita retrasos imprevistos y asegura terminaciones superiores en tu terreno.
+                    </p>
+                </details>
+
+                <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                    <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                        <h3 class="font-bold text-brand-darkText text-base sm:text-lg">3. ¿Cómo calculan el valor de la limpieza de un terreno o bosque?</h3>
+                        <span class="ml-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-brand-gold group-open:rotate-180 transition-transform duration-200">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-brand-slate text-sm leading-relaxed text-justify">
+                        El presupuesto se define de manera transparente evaluando el tamaño de la superficie, la densidad de la vegetación (matorral bajo, monte cerrado o bosque con árboles caídos) y las condiciones de accesibilidad de la propiedad.
+                    </p>
+                </details>
+
+                <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                    <summary class="flex items-center justify-between cursor-pointer focus:outline-none">
+                        <h3 class="font-bold text-brand-darkText text-base sm:text-lg">4. ¿Ofrecen soluciones completas de materiales y mano de obra?</h3>
+                        <span class="ml-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-brand-gold group-open:rotate-180 transition-transform duration-200">
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </span>
+                    </summary>
+                    <p class="mt-4 text-brand-slate text-sm leading-relaxed text-justify">
+                        Sí, ofrecemos el servicio integral suministrando maderas seleccionadas, polines tratados e insumos ideales para superar la humedad constante del sur de Chile. Si ya posees tus materiales, también podemos realizar exclusivamente la mano de obra calificada.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Llamado Final a la Acción -->
+    <section class="py-16 lg:py-24 relative overflow-hidden bg-white">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div class="relative overflow-hidden rounded-3xl border border-brand-gold/20 bg-gradient-to-br from-brand-goldLight via-white to-brand-forestLight/30 p-8 sm:p-12 text-center shadow-xl">
+                <h2 class="text-3xl font-bold tracking-tight text-brand-darkText sm:text-4xl">Asegura tu tranquilidad con un estándar superior</h2>
+                <p class="mx-auto mt-4 max-w-2xl text-brand-slate text-sm sm:text-base">
+                    Evita soluciones provisorias que ceden ante el viento y la lluvia. Asegura el resguardo de tu propiedad trabajando con expertos de confianza, orden técnico y la mejor tecnología alemana disponible.
+                </p>
+                <div class="mt-8">
+                    <a href="https://wa.me/56982477936?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20un%20presupuesto" target="_blank" class="inline-flex items-center space-x-3 rounded-xl bg-brand-gold px-8 py-4 font-bold text-white shadow-lg shadow-brand-gold/20 hover:bg-brand-gold/90 hover:scale-[1.02] transition-all duration-200">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Solicitar presupuesto gratuito</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer class="border-t border-slate-200 bg-slate-50 pt-12 pb-8 text-sm text-brand-slate">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-slate-200">
+            <div class="space-y-4">
+                <img src="./SurPerimetralLogoPreciso_2.png" alt="Sur Perímetral Logotipo" class="h-12 w-auto object-contain" onerror="this.src='https://via.placeholder.com/150x50?text=Sur+Perimetral'">
+                <p class="text-brand-slate text-xs leading-relaxed max-w-xs">
+                    17 años uniendo experiencia local, disciplina y maquinaria industrial alemana para la protección definitiva de terrenos rurales y urbanos.
+                </p>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-brand-darkText">Contacto Directo</h4>
+                <ul class="space-y-2 text-xs text-brand-slate">
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-solid fa-phone text-brand-gold"></i>
+                        <a href="tel:+56982477936" class="hover:text-brand-darkText transition-colors">+56 9 8247 7936</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fa-solid fa-location-dot text-brand-gold"></i>
+                        <span>Nueva Braunau, Región de Los Lagos, Chile</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-xs font-bold uppercase tracking-widest text-brand-darkText">Disponibilidad</h4>
+                <p class="text-xs text-brand-slate"><i class="fa-solid fa-clock text-brand-gold mr-2"></i>Lunes a Sábado: 08:00 a 19:00 hrs.</p>
+                <p class="text-[11px] text-brand-slate italic mt-2">"Orden, rigor y tecnología en tu terreno"</p>
+            </div>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+            <p>© 2026 Sur Perímetral. Todos los derechos reservados.</p>
+            <p class="text-slate-400">Harald Branje - Creador de Contenido Digital</p>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp Flotante -->
+    <a href="https://wa.me/56982477936" target="_blank" aria-label="Contacto por WhatsApp" class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-whatsapp text-white shadow-xl shadow-brand-whatsapp/20 hover:scale-110 active:scale-95 transition-all duration-200 group">
+        <span class="absolute inset-0 rounded-full bg-brand-whatsapp/40 animate-ping group-hover:animate-none"></span>
+        <i class="fa-brands fa-whatsapp text-2xl relative z-10"></i>
+    </a>
+
+</body>
+</html>
